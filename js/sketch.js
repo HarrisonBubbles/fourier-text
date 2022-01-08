@@ -8,16 +8,6 @@ let textHeight = 0;
 let textBottom = 0;
 
 
-// load font
-let myFont;
-opentype.load('assets/BebasNeue2.otf', function (err, font) {
-    if (err) {
-        alert('Font could not be loaded: ' + err);
-    } else {
-        myFont = font;
-    }
-});
-
 // setup p5
 function setup() {
   // reset variables
