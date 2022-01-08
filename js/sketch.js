@@ -7,6 +7,7 @@ let textWidth = 0;
 let textHeight = 0;
 let textBottom = 0;
 
+
 // load font
 let myFont;
 opentype.load('assets/BebasNeue2.otf', function (err, font) {
