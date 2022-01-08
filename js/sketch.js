@@ -1,7 +1,7 @@
 let points = [];
 let theta = 0;
 let path = [];
-let fourier;
+let fourier = [];
 
 let textWidth = 0;
 let textHeight = 0;
@@ -10,6 +10,11 @@ let textBottom = 0;
 
 // setup p5
 function setup() {
+  createCanvas(0,0);
+  frameRate(60);
+}
+
+function buttonClick() {
   // reset variables
   points = [];
   path = [];
@@ -68,10 +73,8 @@ function setup() {
     }
   }
 
-  createCanvas(textWidth + 20, -textHeight + (-textHeight * 4));
-  frameRate(60);
+  resizeCanvas(textWidth + 20, -textHeight + (-textHeight * 4));
 
-  // 
   skip = 1;
   for (let i = 0; i < xy.length; i += skip) {
     const c = new Complex(xy[i].x, xy[i].y);
